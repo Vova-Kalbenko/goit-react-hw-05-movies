@@ -2,3 +2,17 @@
     width: 92px;
     height: 138px;
 }
+.castList{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+}
+.castListItem{
+    max-width: 92px;
+}
+.castDescription{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

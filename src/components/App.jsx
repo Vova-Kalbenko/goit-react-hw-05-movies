@@ -2,7 +2,6 @@ import { lazy, Suspense } from 'react';
 
 import { Routes, Route, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-// import css from './app.module.css';
 import { NotFound } from './NotFound/NotFound';
 
 const Home = lazy(() => import('./Home/Home'));

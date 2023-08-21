@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useSearchParams, useLocation } from 'react-router-dom';
 import { searchMovie } from 'API/api';
-// import css from './movies.module.css';
-
+import css from './Movies.module.css'
+import {BsFillSendCheckFill} from 'react-icons/bs'
 const Movies = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -45,20 +45,20 @@ const Movies = () => {
 
   return (
     <>
-      <div>
+      <div className={css.moviesSearchContainer}>
         <h2 >Search movies:</h2>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={css.socialMessangersForm}>
           <input
             value={query}
             onChange={handleChange}
             name="search"
             type="text"
             placeholder="Type here"
-
+            className={css.socialMessangersInput}
           />
-          <button type="submit" >
-            Search
+          <button type="submit" className={css.searchButton}>
+            <BsFillSendCheckFill className={css.searchButtonIcon}/>
           </button>
         </form>
       </div>
@@ -88,3 +88,6 @@ const Movies = () => {
 };
 
 export default Movies;
+
+
+

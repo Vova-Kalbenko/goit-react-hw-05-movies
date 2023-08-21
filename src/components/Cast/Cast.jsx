@@ -4,7 +4,7 @@ import { getMovieCast } from 'API/api'
 import css from './Cast.module.css'
 import PropTypes from 'prop-types';
 import {AiOutlineUser} from 'react-icons/ai'
-// import userImg from '../../img/user.jpg';
+
 
 const Cast = () => {
   const [data, setData] = useState(null);
@@ -37,9 +37,9 @@ const Cast = () => {
         'Loading...'
       ) : data && data.length > 0 ? (
         <div>
-          <ul>
+          <ul className={css.castList}>
             {data.map(({ name, character, profile_path, id }) => (
-              <li key={id}>
+              <li className={css.castListItem} key={id}>
                 {profile_path ? (
                   <img
                     alt={name}
@@ -49,8 +49,8 @@ const Cast = () => {
                   <AiOutlineUser className={css.icon}/>
                 )}
 
-                <p>{name}</p>
-                <p>{character}</p>
+                <p className={css.castDescription}>{name}</p>
+                <p className={css.castDescription}>{character}</p>
               </li>
             ))}
           </ul>

@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getMovieReviews } from 'API/api';
-// import css from './reviews.module.css';
+
 
 const Reviews = () => {
   const [data, setData] = useState(null);

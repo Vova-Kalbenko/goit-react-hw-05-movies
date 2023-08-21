@@ -1,8 +1,9 @@
 import { useParams, Link, Outlet, useLocation } from 'react-router-dom';
 import { useState, useEffect, Suspense } from 'react';
 import { getMovieDetails } from 'API/api';
-// import css from './movie-details.module.css';
-// import noMovieImg from '../../img/no-poster-available.jpg';
+import {BsArrowLeftCircle} from 'react-icons/bs'
+import css from './MovieDetails.module.css'
+
 
 const MovieDetails = () => {
   const { movieId } = useParams();
@@ -45,15 +46,15 @@ const MovieDetails = () => {
   const comeBackLink = location.state?.from ?? '/';
 
   return (
-    <>
-      <Link to={comeBackLink}>
-        Go Back
+    <div className={css.movieDetailsContainer}>
+      <Link to={comeBackLink} className={css.comeBackLink}>
+        <BsArrowLeftCircle/> Go Back
       </Link>
       {loading ? (
         'Loading...'
       ) : (
         <>
-          <div>
+          <div className={css.movieDetailsWrapper}>
             {data.poster_path ? (
               <img
                 alt={data.original_title}
@@ -95,7 +96,7 @@ const MovieDetails = () => {
           </Suspense>
         </>
       )}
-    </>
+    </div>
   );
 };
 
