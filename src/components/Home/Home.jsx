@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ListMovies, MovieItem } from './home.styled';
+import { ListMovies, MovieItem, HomeMovieDescription, HeaderTitle } from './home.styled';
 import { getTrendingMovies } from 'API/api';
 
 
@@ -33,18 +33,25 @@ const Home = () => {
 
   return (
     <>
+
+      <HeaderTitle>Trending movies:</HeaderTitle>
       <ListMovies>
-        <h2>Trending movies:</h2>
         {loading
           ? 'Loading...'
-          : data.map(({ title, id }) => (
+          : data.map(({ title, id, poster_path }) => (
             <MovieItem key={id}>
               <Link
                 to={`/movies/${id}`}
                 // сохраняем место откуда мы пришли по этой ссылке
                 state={{ from: location }}
               >
-                {title}
+                <img
+                  src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
+                  alt="no img(((("
+                  width="100%"
+                  height="100%"
+                />
+                <HomeMovieDescription>{title}</HomeMovieDescription>
               </Link>
             </MovieItem>
           ))}

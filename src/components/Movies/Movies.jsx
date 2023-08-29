@@ -62,7 +62,7 @@ const Movies = () => {
           </button>
         </form>
       </div>
-      <ul >
+      <ul className={css.movieslist} >
         {searchQuery ? (
           loading ? (
             'Loading...'
@@ -70,7 +70,7 @@ const Movies = () => {
             data.map(({ title, id }) => (
               <li key={id} >
                 <Link state={{ from: location }} to={`/movies/${id}`}>
-                  {title}
+                  <p className={css.moviesName}>{title}</p>
                 </Link>
               </li>
             ))
