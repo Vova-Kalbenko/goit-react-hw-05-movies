@@ -65,28 +65,28 @@ const MovieDetails = () => {
             )}
 
             <div>
-              <h1>
+              <h1 className={css.MovieDetailsTitle}>
                 {data.original_title} ({getYear(data.release_date)})
               </h1>
-              <p>
+              <p className={css.MovieDetailsDescription}>
                 User Score: {Math.round((data.vote_average * 10))}%
               </p>
-              <p>Overview</p>
-              <p>{data.overview}</p>
-              <p >Genres</p>
-              <p>{getGenres(data.genres)}</p>
+              <p className={css.MovieDetailsDescription}>Overview</p>
+              <p className={css.MovieDetailsDescription}>{data.overview}</p>
+              <p className={css.MovieDetailsDescription} >Genres</p>
+              <p className={css.MovieDetailsDescription}>{getGenres(data.genres)}</p>
             </div>
           </div>
           <div>
             <ul>
               <li>
                 <Link to="cast" state={{ from: comeBackLink }}>
-                  <button>Cast</button>
+                  <button className={css.MovieDetailsBtn}>Cast</button>
                 </Link>
               </li>
               <li>
                 <Link to="reviews" state={{ from: comeBackLink }}>
-                  <button>Reviews</button>
+                  <button className={css.MovieDetailsBtn}>Reviews</button>
                 </Link>
               </li>
             </ul>

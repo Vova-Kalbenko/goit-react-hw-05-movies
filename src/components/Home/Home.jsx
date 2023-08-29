@@ -47,7 +47,7 @@ const Home = () => {
               >
                 <img
                   src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
-                  alt="no img(((("
+                  alt={data.original_title}
                   width="100%"
                   height="100%"
                 />

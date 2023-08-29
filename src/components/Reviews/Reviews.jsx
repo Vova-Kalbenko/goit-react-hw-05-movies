@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getMovieReviews } from 'API/api';
-
+import css from './Reviews.module.css'
 
 const Reviews = () => {
   const [data, setData] = useState(null);
@@ -33,17 +33,17 @@ const Reviews = () => {
         'Loading...'
       ) : data && data.length > 0 ? (
         <div >
-          <ul >
+          <ul className={css.reviewsList}>
             {data.map(({ author, content, id }) => (
               <li key={id} >
-                <p>{author}</p>
-                {content}
+                <h3 className={css.reviewsDescriptionAuthor}>{author}</h3>
+                <p className={css.reviewsDescription}>{content}</p>
               </li>
             ))}
           </ul>
         </div>
       ) : (
-        <p >No reviews found</p>
+        <p className={css.reviewsDescription} >No reviews found</p>
       )}
     </>
   );

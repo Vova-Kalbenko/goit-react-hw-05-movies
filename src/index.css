@@ -4,7 +4,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(118, 121, 121);
+  background-color: #202024
 }
 
 code {
@@ -35,7 +35,7 @@ img {
     display: block;
 }
 
-.list {
+ul, li {
     list-style: none;
 }
 

@@ -1,0 +1,27 @@
+.reviewsDescription{
+    color: #fff;
+    letter-spacing: -.64px;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.28;
+    margin-bottom: 8px;
+}
+.reviewsDescriptionAuthor{
+    color: #fff;
+    letter-spacing: -.64px;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.28;
+    margin-bottom: 8px;
+}
+.reviewsList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-direction: column;
+}

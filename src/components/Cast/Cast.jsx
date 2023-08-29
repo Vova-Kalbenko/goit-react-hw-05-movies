@@ -56,7 +56,7 @@ const Cast = () => {
           </ul>
         </div>
       ) : (
-        <p>No data found</p>
+        <p className={css.castDescription}>No data found</p>
       )}
     </>
   );

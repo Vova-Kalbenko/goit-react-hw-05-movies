@@ -4,6 +4,7 @@ export const HeaderTitle = styled.h2`
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 200px;
+  color: #fff;
 `;
 
 export const ListMovies = styled.ul`
@@ -24,15 +25,15 @@ width: 230px;
 `;
 
 export const HomeMovieDescription = styled.p `
-    color: #111;
+    color: #fff;
     letter-spacing: -.64px;
     max-width: 180px;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 4px;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 18px;
+    font-weight: 500;
+    line-height: 1.28;
     overflow: hidden;
     text-decoration: none;
     padding-top: 8px;
