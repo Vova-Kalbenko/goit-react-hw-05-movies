@@ -44,7 +44,7 @@ const Cast = () => {
                   <img
                     alt={name}
                     src={`https://image.tmdb.org/t/p/w92${profile_path}`}
-                    width="120px"
+                    width="140px"
                   />
                 ) : (
                   <AiOutlineUser className={css.icon}/>

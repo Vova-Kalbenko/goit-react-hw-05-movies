@@ -75,7 +75,7 @@ const Movies = () => {
               </li>
             ))
           ) : (
-            <p>
+            <p className={css.notMoviesFound}>
               No movies with this title were found. Try entering another title
             </p>
           )

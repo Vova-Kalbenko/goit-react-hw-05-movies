@@ -19,15 +19,15 @@
 .castListItem{
     max-width: 140px;
 }
-.castDescription{
+.castDescription {
     text-overflow: ellipsis;
     overflow: hidden;
     color: #fff;
     letter-spacing: -.64px;
     text-overflow: ellipsis;
-    margin-bottom: 4px;
+white-space: nowrap;
+padding-top: 8px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.28;
-    margin-bottom: 8px;
 }
