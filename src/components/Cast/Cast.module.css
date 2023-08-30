@@ -2,31 +2,35 @@
     width: 120px;
     height: 180px;
 }
-.castList{
+
+.castList {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
 
 }
-.castList{
+
+.castList {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     list-style: none;
 }
-.castListItem{
+
+.castListItem {
     max-width: 140px;
 }
+
 .castDescription {
     text-overflow: ellipsis;
     overflow: hidden;
     color: #fff;
     letter-spacing: -.64px;
     text-overflow: ellipsis;
-white-space: nowrap;
-padding-top: 8px;
+    white-space: nowrap;
+    padding-top: 8px;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.28;
