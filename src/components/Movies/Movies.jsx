@@ -46,7 +46,7 @@ const Movies = () => {
   return (
     <>
       <div className={css.moviesSearchContainer}>
-        <h2 >Search movies:</h2>
+        <h2 className={css.moviesSearchTitle}>Search movies:</h2>
 
         <form onSubmit={handleSubmit} className={css.socialMessangersForm}>
           <input
