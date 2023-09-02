@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/983.2d743a9d.chunk.css","mappings":"AAAA,uBAEI,gCAAyB,CAAzB,wBAAyB,CAAzB,8CAAyB,CADzB,WAEJ,CACA,6BACI,4BAAqB,CAArB,oBACJ","sources":["components/Home/Home.module.css"],"sourcesContent":[".MovieItem {\n    width: 230px;\n    transition: transform .2s;\n}\n.MovieItem:hover {\n    transform: scale(1.1);\n}\n"],"names":[],"sourceRoot":""}
