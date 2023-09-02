@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ListMovies, MovieItem, HomeMovieDescription, HeaderTitle } from './home.styled';
+import { ListMovies,  HomeMovieDescription, HeaderTitle } from './home.styled';
 import { getTrendingMovies } from 'API/api';
 import css from './Home.module.css'
 

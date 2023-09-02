@@ -57,7 +57,8 @@
     font-weight: 700;
     line-height: 18px;
     transition: background-color .25s linear;
-    min-width: 120px
+    min-width: 120px;
+    margin-bottom: 8px;
 }
 .MovieDetailsBtn:hover{
     color: yellow;
