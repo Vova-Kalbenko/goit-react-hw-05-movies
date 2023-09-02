@@ -46,7 +46,7 @@
     color: #111;
     letter-spacing: -.14px;
     text-transform: uppercase;
-    background-color: #f6f6f6;
+    background-color: yellow;
     border: 2px solid #4f2ee8;
     border-radius: 40px;
     justify-content: center;
@@ -62,4 +62,8 @@
 .MovieDetailsBtn:hover{
     color: yellow;
     background-color: #0000;
+}
+.MovieDetailsBtnFlex{
+    display: flex;
+    gap: 8px;
 }

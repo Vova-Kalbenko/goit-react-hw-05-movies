@@ -1,0 +1,7 @@
+.MovieItem {
+    width: 230px;
+    transition: transform .2s;
+}
+.MovieItem:hover {
+    transform: scale(1.1);
+}

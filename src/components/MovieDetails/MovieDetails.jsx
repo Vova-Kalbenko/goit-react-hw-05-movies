@@ -78,7 +78,7 @@ const MovieDetails = () => {
             </div>
           </div>
           <div>
-            <ul>
+            <ul className={css.MovieDetailsBtnFlex}>
               <li>
                 <Link to="cast" state={{ from: comeBackLink }}>
                   <button className={css.MovieDetailsBtn}>Cast</button>

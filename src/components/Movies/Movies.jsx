@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useSearchParams, useLocation } from 'react-router-dom';
 import { searchMovie } from 'API/api';
 import css from './Movies.module.css'
-import {BsFillSendCheckFill} from 'react-icons/bs'
+import {AiOutlineSearch} from 'react-icons/ai'
 const Movies = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -58,7 +58,7 @@ const Movies = () => {
             className={css.socialMessangersInput}
           />
           <button type="submit" className={css.searchButton}>
-            <BsFillSendCheckFill className={css.searchButtonIcon}/>
+            <AiOutlineSearch className={css.searchButtonIcon}/>
           </button>
         </form>
       </div>

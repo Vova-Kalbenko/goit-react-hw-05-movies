@@ -17,11 +17,7 @@ export const ListMovies = styled.ul`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
-`;
-
-export const MovieItem = styled.li`
-width: 230px;
+  gap: 16px;
 `;
 
 export const HomeMovieDescription = styled.p `
